@@ -13,9 +13,9 @@ d = new Date()
 console.log( d.getTime() ) //method that returns a value
 
 person = { ///CREATE AN OBJECT
-    name: "Kevin",
-    age: 55,
-    greet: () => console.log("Hello World!!!")
+    name: "Kevin",  //property 
+    age: 55,        //property
+    greet: () => console.log("Hello World!!!") // method
 }
 
 person.age++;//increment age 55->56

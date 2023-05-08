@@ -12,6 +12,8 @@ let yourScores = [82, 98, 94, 88, 92, 100, 100];
 
 mine = getAverage(myScores)
 yours = getAverage(yourScores)
+
 console.log("MINE:", mine)
 console.log("YOURS:", yours)
+
 console.log("DID I WIN?", mine > yours)
