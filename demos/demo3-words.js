@@ -1,7 +1,9 @@
 //WORDS
 
 //CORPUS - BODY OF TEXT
-corpus = "Now is the time for all..."
+corpus = "          Now is the time for all...         "
+
+corpus = corpus.trim(); // remove white space from both ends of the string
 
 count = 0
 index=0
