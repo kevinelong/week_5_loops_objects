@@ -77,7 +77,8 @@ function printCourseListTitles(courseList){
     for(let i=0;i<courseList.length;i++){
         console.log(courseList[i].Title);
     }
-}function printCourseList(courseList){
+}
+function printCourseList(courseList){
     for(let i=0;i<courseList.length;i++){
         printCourse(courseList[i]);
     }
