@@ -1,0 +1,43 @@
+<body>
+    <select id="avm" size="3" style="vertical-align: top;">
+        <option value="a">Animal</option>
+        <option value="v">Vegetable</option>
+        <option value="m">Mineral</option>
+    </select>
+    <select id="results"></select>
+</body>
+<script>
+    const things =[
+        {category:"a", name:"tiger"},
+        {category:"a", name:"hippo"},
+        {category:"a", name:"cat"},
+        {category:"v", name:"turnip"},
+        {category:"v", name:"tomato"},
+        {category:"v", name:"strawberry"},
+        {category:"v", name:"pumpkin"},
+        {category:"m", name:"zinc"},
+        {category:"m", name:"iron"},
+        {category:"m", name:"potassium"},
+    ]
+
+    const avm = document.getElementById("avm");
+    const results = document.getElementById("results");
+
+    avm.addEventListener("change", ()=>{
+        let selectedCategory = avm.selectedOptions[0].value;
+        results.innerHTML = "" //clear old results
+        let count = 0;
+        for(i=0;i<things.length;i++){
+            let item = things[i];
+            if(item.category == selectedCategory){
+                // results.innerHTML += `<option>${item.name}</option>`;
+                option = document.createElement("option");
+                option.innerHTML = item.name;
+                results.appendChild(option);
+                count++;
+            }
+        }
+        results.setAttribute("size", count)
+    })
+
+</script>

@@ -5,11 +5,6 @@
     "version": "0.2.0",
     "configurations": [
 
-        {
-            "type": "msedge",
-            "request": "launch",
-            "name": "Open demo-web.html",
-            "file": "c:\\Users\\kevin\\LearnToCode\\week_5_loops_objects\\demos\\demo-web.html"
-        }
+
     ]
 }

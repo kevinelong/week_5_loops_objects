@@ -31,8 +31,6 @@ for(let i=0; i < data.length; i++){
 //         sought = sought.toLowerCase()
 
 //         if(contains(sought, name)){
-//         // if(name.indexOf(sought) != -1){
-//         // if(data[i].name.toLowerCase().indexOf(sought.toLowerCase()) != -1){ //CONTAINS 
 //             console.log(data[i].name)
 //         }
 //     }
