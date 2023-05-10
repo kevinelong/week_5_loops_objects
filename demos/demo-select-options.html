@@ -1,0 +1,25 @@
+<body>
+</body>
+<script>
+    let people = [
+        {name:"Larry", id: 111},
+        {name:"Moe", id: 222},
+        {name:"Curly", id: 333},
+    ]
+
+    let select = document.createElement("select");
+    select.setAttribute("size", people.length)
+
+    for(let i = 0; i < people.length; i++){
+        let option = document.createElement("option");
+        option.innerText = people[i].name;
+        option.value = people[i].id;
+        select.appendChild(option);
+    }
+
+    document.body.appendChild(select);
+
+    select.addEventListener("change",(e)=>{
+        alert(select.selectedOptions[0].value)
+    })
+</script>
