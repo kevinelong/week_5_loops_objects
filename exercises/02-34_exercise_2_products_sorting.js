@@ -15,6 +15,7 @@ let products = [
         }
     }
 
+    
     products.sort((a,b)=>{
         if (a.product < b.product){
             return -1;
@@ -27,13 +28,15 @@ let products = [
 
     printProductList(products)
 console.log("-------------------")
-    products.sort((a,b)=>{
-        if (a.price < b.price){
-            return -1;
-        }else if (a.price == b.price){
-             return 0;
-        }else{
-            return 1;
-        }
-    })
-    printProductList(products)
+// products.sort((a,b)=>{
+//     if (a.price < b.price){
+//         return -1;
+//     }else if (a.price == b.price){
+//          return 0;
+//     }else{
+//         return 1;
+//     }
+// })
+
+products.sort((a,b) => a.price - b.price)
+printProductList(products)
