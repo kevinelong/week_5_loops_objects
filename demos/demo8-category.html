@@ -30,10 +30,13 @@
         for(i=0;i<things.length;i++){
             let item = things[i];
             if(item.category == selectedCategory){
-                // results.innerHTML += `<option>${item.name}</option>`;
-                option = document.createElement("option");
-                option.innerHTML = item.name;
-                results.appendChild(option);
+
+                results.innerHTML += `<option>${item.name}</option>`;
+                
+                // option = document.createElement("option");
+                // option.innerHTML = item.name;
+                // results.appendChild(option);
+
                 count++;
             }
         }
