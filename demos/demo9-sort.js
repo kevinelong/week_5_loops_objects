@@ -1,9 +1,9 @@
 data = [
-    {name:"Moe", id:"222"},
-    {name:"Larry", id:"111"},
-    {name:"Curly", id:"444"},
-    {name:"Schlep", id:"333"},
-    {name:"Kevin", id:"000"},
+    {name:"Moe", id:    222},
+    {name:"Larry", id:  111},
+    {name:"Curly", id:  444},
+    {name:"Schlep", id: 333},
+    {name:"Kevin", id:  0},
 ];
 
 function displayList(list){
