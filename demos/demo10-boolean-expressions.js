@@ -17,6 +17,9 @@ noun: syllogism; plural noun: syllogisms
 //  Get a gallon milk and if they have eggs then get a dozen.
 
 // ! is the NOT operator
+// || is the OR operator
+// && is the AND operator
+
 broughtLunch = true
 
 inverted = !broughtLunch //opposite/inverted NOTed
@@ -49,8 +52,11 @@ if (painLevel > 5 || daysFeltBad > 7){
     console.log("GO TO DOCTOR")
 }
 
-result = (false || false) || (true && true)
-console.log(result) 
+function calculate(){
+    return (false || false) || (true && true)
+}
+
+console.log(calculate()) 
 
 //GAME LOOP
 // while( !quit && !dead()){
